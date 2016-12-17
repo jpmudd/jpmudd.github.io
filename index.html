@@ -6,16 +6,114 @@
 
 <meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />    
+<link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 <style>
     
-/* CSS style rules go here! */   
+    body {  
+        background: #f5f5f5;   
+        font-family: Imprima, sans-serif;
+    }
+    header {
+        width: 100%;
+        min-width: 800px;
+        margin: 0 auto;
+        background: steelblue;
+        padding: 15px 0 20px;
+    }
+    h1 {
+        font-family: Dosis, sans-serif;
+        color: #375671;
+        width: 80%;
+        margin: 0 auto;
+        color: whitesmoke;
+    }
+    h2 {
+        font-family: Dosis, sans-serif;
+        color: #375671;
+        width: 80%;
+        margin: 0 auto;
+        color: whitesmoke;
+    }
+    h3 {
+        font-family: Dosis, sans-serif;
+        color: #003d71
+    }
+    p {
+        font-size: .9em;
+        color: #375671;
+    }
+    ul {
+        list-style-type: none;
+        font-size: .9em;
+        color: #375671;
+        line-height: 1.6em;
+    }
+    a, a:visited {   
+        color: #003d71;
+    }
+    .project {
+        width: 80%;
+        min-width: 800px;
+        height: 100%;
+        margin: 35px auto;
+    }
+    .project:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .project-image {
+        width: 388px;
+        height: 240px;
+        background: white;
+        float: left;
+        margin-right: 20px;
+        border: 2px solid #dddddd;
+    }
 
 </style>
 </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
 
 <body>
-
-    <p>Hello World! I’m going to be a portfolio page.</p>
+    <header>
+        <h1>MAP672: Programming for Web Mapping</h1>
+        <h2>Web Cartography at the University of Kentucky</h2>
+    </header>
     
+    <section class="project">
+        <img src="images/jmudd_HWA_ESRI2010_snip.JPG" alt="Sage-grouse Habitat Poster" class="project-image" />
+        <h3>Sage-grouse habitat feature extraction using 2009 NAIP orthophotography</h3>
+        <p>This poster presents a project mapping Sage-grouse habitat in north-central Wyoming.</p>
+        <p>The poster was created by James Mudd and Chad Olson, Haden-Wing Associates, LLC.</p>
+        <ul>
+            <li>See the full poster: <a href="maps/jmudd_HWA_ESRI2010.pdf">Sage-grouse habitat feature extraction using 2009 NAIP orthophotography.</a></li>
+            <li>Source data from the <a href="https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/">USDA Farm Service Agency</a>.</li>
+        </ul>
+    </section>
+    
+    <section class="project">
+        <a target = '_blank' href="http://scenichudson.org/slr/mapper"><img src="images/ScenicHudson_SLRmapper_snip.JPG" alt="Scenic Hudson's Sea Level Rise mapper" class="project-image" /></a>
+        <h3><a target = '_blank' href="http://scenichudson.org/slr/mapper">Scenic Hudson's Sea Level Rise online mapper</a></h3>
+        <p>The Sea Level Rise Mapper is a tool for communities and stakeholders to create visualizations of future scenarios of sea level rise.</p>
+        <p>Scenic Hudson's Sea Level Rise data has been updated by James Mudd, Conservation GIS Manager, Scenic Hudson, Inc.</p>
+        <ul>
+            <li>See the online mapper: <a target = '_blank'  href="http://scenichudson.org/slr/mapper">Scenic Hudson's SLR Mapper.</a></li>
+            <li>All elevation information is from a high-resolution LiDAR topography product collected by the <a target = '_blank'  href="http://www.dec.ny.gov/lands/4920.html">NYS DEC Hudson River Estuary Program</a> in 2012.</li>
+        </ul>
+     </section>   
+        
+    <section class="project">
+        <a target = '_blank'  href="#"><img src="images/PowerGen_map_snip.PNG" alt="map of renewable power generation in the U.S." class="project-image" /></a>
+        <h3><a target = '_blank'  href="#">Renewable Power Generation in the U.S.</a></h3>
+        <p>This proportional symbol map represents the power outputs of renewable energy sources (Wind, Solar, and Hydro) in the conterminous United States.</p>
+        <p>The map was created by James P. Mudd as a class assignment for the NewMapsPlus MAP672 course.</p>
+        <ul>
+            <li>See the map: <a target = '_blank'  href="#">Renewable Power Generation in the U.S.</a></li>
+            <li>Source data from the <a target = '_blank'  href="http://www.eia.gov/electricity/data/eia923/">U.S. Energy Information Administration</a>.</li>
+        </ul>
+    </section>
 </body>
 </html>
